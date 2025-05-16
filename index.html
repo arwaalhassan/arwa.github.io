@@ -3,36 +3,115 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>بورتفوليو المبرمج</title>
+  <title>Portfolio | أروى الحسن</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: sans-serif; background: #f9f9f9; padding: 20px; color: #333; }
-    .project { border-bottom: 1px solid #ccc; margin-bottom: 20px; padding-bottom: 10px; }
-    h1 { color: #2c3e50; }
-    a { color: #2980b9; text-decoration: none; }
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 40px;
+      color: #333;
+      direction: rtl;
+    }
+
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p.description {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 40px;
+      color: #555;
+    }
+
+    .projects-container {
+      display: grid;
+      gap: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .project {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      padding: 20px 25px;
+      transition: transform 0.2s ease;
+    }
+
+    .project:hover {
+      transform: scale(1.02);
+    }
+
+    .project h3 {
+      color: #1e3a8a;
+      margin-top: 0;
+    }
+
+    .project p {
+      font-size: 15px;
+      color: #444;
+    }
+
+    a {
+      color: #0d6efd;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 20px;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>👨‍💻 أهلاً، هذا بورتفوليوني</h1>
-  <p>مبرمج بخبرة في .NET, Docker, Flutter, Node.js، وتطبيقات سطح المكتب.</p>
+  <h1>👩‍💻 أروى الحسن - معرض الأعمال</h1>
+  <p class="description">مبرمجة بخبرة في .NET, Docker, Flutter, Node.js، وتطبيقات سطح المكتب</p>
 
-  <h2>📌 المشاريع</h2>
+  <div class="projects-container">
+    <div class="project">
+      <h3>نظام دردشة - ASP.NET Core + Docker</h3>
+      <p>نظام دردشة باستخدام RabbitMQ و SQL Lite داخل بيئة Docker.</p>
+      <p><strong>رابط GitHub:</strong> <a href="https://github.com/arwaalhassan/chatsystem.git">رابط المشروع</a></p>
+    </div>
 
-  <div class="project">
-    <h3>نظام دردشة - ASP.NET Core + Docker</h3>
-    <p>,rabbitmq Docker وSQL lite.</p>
-    <p><strong>رابط GitHub:</strong> <a href="#">رابط المشروع</a></p>
-  </div>
+    <div class="project">
+      <h3>تطبيق منصة ابداع Flutter مع Node.js API</h3>
+      <p>تطبيق موبايل مع واجهة Flutter و Back-end باستخدام Node.js و MySQL.</p>
+      <p><strong>رابط GitHub:</strong> <a href="https://github.com/arwaalhassan/flutter-ebda3-app.git">رابط المشروع</a></p>
+    </div>
 
-  <div class="project">
-    <h3>تطبيق Flutter مع Node.js API</h3>
-    <p>تطبيق موبايل مع واجهة Flutter وBack-end باستخدام Node.js وmysql.</p>
-    <p><strong>رابط GitHub:</strong> <a href="#">رابط المشروع</a></p>
-  </div>
+    <div class="project">
+      <h3>تطبيق السياحة الإلكترونية - Flutter + Node.js</h3>
+      <p>تطبيق سياحي ذكي بواجهة Flutter وخلفية Node.js مع MySQL.</p>
+      <p><strong>رابط GitHub:</strong> <a href="https://github.com/arwaalhassan/flutter_etourism.git">رابط المشروع</a></p>
+    </div>
+<div class="project">
+      <h3>تطبيق السياحة الإلكترونية - Flutter + Node.js</h3>
+      <p>تطبيق سياحي ذكي بواجهة Flutter وخلفية Node.js مع MySQL.</p>
+      <p><strong>رابط GitHub node.js:</strong> <a href="https://github.com/arwaalhassan/e-touristbackend.git">رابط المشروع</a></p>
+    </div>
+    <div class="project">
+      <h3>تطبيق سطح مكتب - C#</h3>
+      <p>تطبيق إدارة عيادة طبية باستخدام WinForms مع حفظ البيانات كـ PDF.</p>
+      <p><strong>رابط GitHub:</strong> <a href="#">رابط المشروع</a></p>
+    </div>
 
-  <div class="project">
-    <h3>تطبيق سطح مكتب - C#</h3>
-    <p>تطبيق لادارة عيادة طبيب PDF، باستخدام WinForms.</p>
-    <p><strong>رابط GitHub:</strong> <a href="#">رابط المشروع</a></p>
+    <div class="project">
+      <h3>متجر كتب إلكتروني - ASP.NET</h3>
+      <p>موقع لعرض وشراء الكتب الإلكترونية باستخدام ASP.NET.</p>
+      <p><strong>رابط GitHub:</strong> <a href="https://github.com/arwaalhassan/bookstore.git">رابط المشروع</a></p>
+    </div>
   </div>
 </body>
 </html>
